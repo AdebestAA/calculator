@@ -1,0 +1,278 @@
+ * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    article {
+        background-color: rgb(233, 222, 222);
+        min-width: 400px;
+        min-height: 550px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        box-shadow: 0px 0px 5px 4px rgb(121, 115, 115);
+        border-radius: 10px;
+        color: red;
+    }
+
+    article .output {
+        margin-bottom: 20px;
+        background-color: rgb(238, 231, 231);
+        height: 70px;
+        width: 380px;
+        box-shadow: inset 10px 10px 10px -1px rgba(37, 35, 35),
+            inset -10px -10px 9px -1px rgba(255, 255, 255, 0.70);
+
+        font-size: 4rem;
+        display: flex;
+        border-radius: 15px;
+        padding-left: 15px;
+
+
+    }
+
+    article .digits {
+        width: 380px;
+        height: 400px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 10px;
+
+
+    }
+
+    article button {
+        border-radius: 15px;
+        font-size: 2rem;
+        margin: 0.3rem;
+        border: none;
+        color: red;
+        background-color: rgb(233, 222, 222);
+        /* box-shadow: 10px 10px 10px -1px rgba(37, 35, 35),
+            -10px -10px 10px -1px rgba(255, 255, 255, 0.993); */
+
+        box-shadow: inset -10px 0px 5px -5px rgba(37, 35, 35),
+            inset 10px 0px 10px -1px rgba(255, 255, 255, 0.993)
+    }
+
+   
+    h5{
+        justify-self: center;
+        align-self: center;
+        color:grey;
+        font-size: 0.5rem;
+    }
+
+    article button:hover,article button:focus {
+        background-color: #a7a1a1;
+        cursor: pointer;
+
+    }
+
+    /* grid */
+
+    /* section {
+        background-color: red;
+        width: 400px;
+        height: 500px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 5px;
+
+    }
+
+    div {
+        background-color: black;
+        color: white;
+        font-size: 2rem;
+        margin: 3px;
+    }
+
+    div:nth-child(8) {
+        background-color: blue;
+        grid-row-start: 2;
+        grid-column-start: 4;
+        grid-row-end: 4;
+        display: grid;
+        place-content: center;
+    } */
+
+    @media screen and (max-width: 450px) {
+      body{
+        padding: 10px;
+      }
+      article{
+        min-width: 150px;
+        width: 350px;
+    
+      }
+    article .output {
+        margin-bottom: 0;
+        background-color: rgb(238, 231, 231);
+        height: 70px;
+        width: 90%;
+        box-shadow: inset 10px 10px 10px -1px rgba(37, 35, 35),
+            inset -10px -10px 9px -1px rgba(255, 255, 255, 0.70);
+
+        font-size: 3.4rem;
+        display: flex;
+        border-radius: 15px;
+          }
+        article .digits {
+            width: 340px;
+            height: 400px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 10px;
+
+
+        }
+
+
+article button {
+        border-radius: 15px;
+        font-size: 2rem;
+        margin: 0.3rem;
+        height: 4rem;
+        border: none;
+        color: red;
+        background-color: rgb(233, 222, 222);
+        /* box-shadow: 10px 10px 10px -1px rgba(37, 35, 35),
+    -10px -10px 10px -1px rgba(255, 255, 255, 0.993); */
+
+        box-shadow: inset -10px 0px 5px -5px rgba(37, 35, 35),
+            inset 10px 0px 10px -1px rgba(255, 255, 255, 0.993)
+    }
+
+   
+   }
+
+
+
+
+   /* 350px size */
+
+         @media screen and (max-width: 350px) {
+             body {
+              
+                 padding: 10px;
+             }
+    
+             article {
+                 min-width: 150px;
+                 width: 280px;
+                 min-height: 200px;
+                 height: 400px;
+    
+             }
+    
+             article .output {
+                 margin-bottom: 0;
+                 background-color: rgb(238, 231, 231);
+                 height: 70px;
+                 width: 90%;
+                 box-shadow: inset 10px 10px 10px -1px rgba(37, 35, 35),
+                     inset -10px -10px 9px -1px rgba(255, 255, 255, 0.70);
+    
+                 font-size: 2.6rem;
+                 display: flex;
+                 border-radius: 15px;
+             }
+    
+             article .digits {
+                 width: 280px;
+                 height: 400px;
+                 display: grid;
+                 grid-template-columns: 1fr 1fr 1fr 1fr;
+                 gap: 2px;
+                 margin-top: 10px;padding-left: 3px;
+    
+    
+             }
+    
+    
+             article button {
+                 border-radius: 15px;
+                 font-size: 2rem;
+                 height: 3rem;
+                 border: none;
+                 color: red;
+                 background-color: rgb(233, 222, 222);
+                 /* box-shadow: 10px 10px 10px -1px rgba(37, 35, 35),
+        -10px -10px 10px -1px rgba(255, 255, 255, 0.993); */
+    
+                 box-shadow: inset -10px 0px 5px -5px rgba(37, 35, 35),
+                     inset 10px 0px 10px -1px rgba(255, 255, 255, 0.993)
+             }
+    
+    
+         }
+
+         
+
+
+
+
+                 @media screen and (max-width: 286px) {
+                     body {
+                         padding: 10px;
+                     }
+        
+                     article {
+                         min-width: 150px;
+                         width: 200px;
+                         min-height: 200px;
+                         height: 400px;
+        
+                     }
+        
+                     article .output {
+                         margin-bottom: 0;
+                         background-color: rgb(238, 231, 231);
+                         height: 40px;
+                         width: 90%;
+                         box-shadow: inset 10px 10px 10px -1px rgba(37, 35, 35),
+                             inset -10px -10px 9px -1px rgba(255, 255, 255, 0.70);
+                         font-size: 1.6rem;
+                         display: flex;
+                         justify-content: center;
+                         border-radius: 15px;
+                     }
+        
+                     article .digits {
+                         width: 180px;
+                         height: 400px;
+                         display: grid;
+                         grid-template-columns: 1fr 1fr 1fr 1fr;
+                         gap: 2px;
+                         margin-top: 10px;
+                         padding-left: 3px;
+        
+        
+                     }
+        
+        
+                     article button {
+                         border-radius: 15px;
+                         font-size: 2rem;
+                         height: 3rem;
+                         border: none;
+                         color: red;
+                         background-color: rgb(233, 222, 222);
+                         /* box-shadow: 10px 10px 10px -1px rgba(37, 35, 35),
+                -10px -10px 10px -1px rgba(255, 255, 255, 0.993); */
+        
+                         box-shadow: inset -10px 0px 5px -5px rgba(37, 35, 35),
+                             inset 10px 0px 10px -1px rgba(255, 255, 255, 0.993)
+                     }
+        
+        
+                 }
